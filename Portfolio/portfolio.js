@@ -1,0 +1,1 @@
+alert("This is a practice project,all the information available is invalid.")

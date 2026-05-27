@@ -1,0 +1,807 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #020623;
+}
+
+
+/* navigation bar */
+nav {
+    background-color: #060816;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div:nth-child(1) img {
+    width: 7vw;
+    box-shadow: 3px 3px 2px red;
+    border-radius: 50%;
+}
+
+nav div:nth-child(1) h1 {
+    color: whitesmoke;
+    font-size: 2em;
+    margin: 0px 1vw;
+}
+
+nav div:nth-child(2) a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 0px 1vw;
+    padding: 0px 1vw 4vh 1vw;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav div:nth-child(3) button {
+    font-size: 1em;
+    font-family: cursive;
+    border: none;
+    border-radius: 20px;
+    padding: 1vh 2vw;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(61, 0, 194);
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main #mainSection {
+    border-right: 1px solid white;
+    background-color: #060816;
+    width: 60vw;
+    padding: 5vh 0px;
+}
+
+/* Intro */
+
+#mainSection #intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65vh;
+}
+
+#mainSection #intro #intro_data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 25vw;
+}
+
+#mainSection #intro #intro_data .fa-share {
+    margin: 0px 0.5vw;
+}
+
+#mainSection #intro #intro_data button:nth-child(1) {
+    background-color: rgb(85, 48, 150);
+    padding: 1vh 2vw;
+    margin: 1vh 0px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mainSection #intro #intro_data h1 {
+    margin: 2vh 0px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 20vw;
+    font-size: 2.3em;
+    text-shadow: 2px 2px 2px black;
+}
+
+#mainSection #intro #intro_data h1 span {
+    color: rgb(113, 24, 127);
+}
+
+#mainSection #intro #intro_data p {
+    margin: 1vh 0px;
+    color: white;
+    font-size: 1em;
+    font-family: cursive;
+    width: 25vw;
+}
+
+#mainSection #intro #intro_data span button:nth-child(1) {
+    margin: 2vh 0px;
+    padding: 1vh 2vw;
+    background-color: rgb(49, 13, 112);
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mainSection #intro #intro_data span button:nth-child(2) {
+    margin: 2vh 1vw;
+    border-radius: 5px;
+    padding: 1vh 1vw;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+}
+
+
+#mainSection #intro #intro_image img {
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30%;
+    border-bottom: 5px solid yellow;
+    border-top: 5px solid white;
+}
+
+/* about */
+#mainSection #about {
+    background-color: #0a0d26;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mainSection #about #aboutData {
+    width: 30vw;
+}
+
+#aboutData h1 {
+    margin: 2vh 0px;
+    text-shadow: 2px 2px 2px black;
+    width: 20vw;
+    font-size: 2em;
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+#aboutData p {
+    font-size: 1em;
+    font-family: cursive;
+    color: rgb(172, 164, 164);
+}
+
+#aboutData button {
+    margin: 2vh 0px;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(47, 54, 0);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mainSection #about #aboutInfo {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#aboutInfo div {
+    width: 10vw;
+    height: 20vh;
+    margin: 2vh 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#aboutInfo div h1 {
+    color: rgb(157, 0, 255);
+    text-shadow: 1px 1px 2px white;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#aboutInfo div h3 {
+    color: white;
+}
+
+/* skills */
+#mainSection #skills {
+    padding: 4vh 0px;
+    height: 30vh;
+    background-color: #060816;
+}
+
+#skills #skillsData h2 {
+    margin: 1vh 1vw;
+    color: yellow;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#skills #skillsInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+#skillsInfo div {
+    background-color: #020623;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 6vw;
+    padding: 1vh 0.5vw;
+}
+
+#skillsInfo div i {
+    font-size: 2em;
+}
+
+#skillsInfo div h3 {
+    font-family: cursive;
+    margin: 2vh 0px 0px 0px;
+    font-size: 1em;
+    color: white;
+}
+
+/* services */
+main #services {
+    padding: 2vh 1vw;
+    height: 70vh;
+    background-color: #0a0d26;
+}
+
+#services #servicesData h3 {
+    font-weight: 800;
+    color: rgb(0, 104, 104);
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#servicesData h2 {
+    text-shadow: 2px 2px 1px black;
+    color: white;
+    font-size: 1.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+#services #servicesInfo {
+    margin: 2vh 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#servicesInfo div {
+    background-color: #1a202c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    width: 18vw;
+    height: 40vh;
+}
+
+#servicesInfo div h1 {
+    color: white;
+    border-radius: 5px;
+    padding: 1vh 1vw;
+    font-size: 2em;
+    background-color: rgb(0, 19, 50);
+    width: 5vw;
+    text-align: center;
+}
+
+#servicesInfo div h2 {
+    margin: 3vh 0px 1vh 0px;
+    color: yellow;
+    font-size: 1.3em;
+}
+
+#servicesInfo div p {
+    margin: 2vh 0px 0px 0px;
+    color: whitesmoke;
+    font-size: 1em;
+    font-family: cursive;
+}
+
+#servicesMore {
+    display: flex;
+    justify-content: center;
+}
+
+#servicesMore button {
+    font-weight: 800;
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 5px;
+    margin: 2vh 0px;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Main Side */
+
+main #sideSection {
+    background-color: #060816;
+    height: auto;
+}
+
+#sideProjects #projectsData {
+    color: white;
+    font-size: 0.8em;
+    font-family: cursive;
+    text-align: center;
+}
+
+#sideProjects #projectsInfo {
+    margin: 2vh 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#projectsInfo div {
+    border-radius: 5px;
+    padding: 0px 0px 2vh 0px;
+    margin: 2vh 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    border: 2px solid black;
+    background: linear-gradient(to right, rgb(25, 21, 90), rgb(22, 22, 52), rgb(7, 7, 27), rgb(0, 0, 29));
+}
+
+#projectsInfo div img {
+    border: 2px solid black;
+    width: 18vw;
+    border-radius: 5px;
+}
+
+#projectsInfo div h3 {
+    margin: 1vh 0px 0px 0px;
+    font-size: 1em;
+    color: whitesmoke;
+    font-family: cursive;
+}
+
+#projectsInfo div h4 {
+    font-size: 0.6em;
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* connect */
+
+main #sideConnect {
+    background-color: #060816;
+}
+
+#sideConnect #connectData {
+    text-shadow: 1px 1px 1px gold;
+    color: rgb(57, 118, 0);
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 2vh 1vw;
+}
+
+#sideConnect form {
+    background-color: #0a0d26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2vh 1vw;
+}
+
+form input {
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    margin: 1vh 0px;
+    outline: none;
+    width: 18vw;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid blue;
+}
+
+form textarea {
+    margin: 2vh 0px 1vh 0px;
+    outline: none;
+    border: none;
+    width: 30vw;
+    height: 15vh;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    color: white;
+    font-size: 0.9em;
+}
+
+form button {
+    margin: 2vh 0px;
+    border: none;
+    background-color: rgb(23, 0, 86);
+    padding: 1vh 2vw;
+    color: white;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+#sideConnect #review{
+    height: 40vh;
+}
+
+#review h2{
+    font-size: 1.4em;
+    margin: 1vh 1vw;
+    color: goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#review #carouselExample{
+    height: 30vh;
+}
+
+.carousel-item{
+    color: white;
+    font-size: 1.2em;
+    font-family: cursive;
+    text-align: center;
+}
+
+.carousel-inner{
+    padding: 2vh 5vw;
+    background-color: #060816;
+}
+
+#findMe{
+    padding: 1vh 1vw;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#findmeData{
+    width: 20vw;
+}
+
+#findmeData h2{
+    font-size: 1.2em;
+    color: white;
+    font-family: cursive;
+}
+
+#findmeData div{
+    font-size: 1.4em;
+    margin: 2vh 0px;
+}
+
+#findmeData h4{
+    font-size: 1em !important;
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sideSection #foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28vh;
+    background-image: url("../Images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#foot button{
+    border: none;
+    border-radius: 10px;
+    background-color: #1a202c;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    padding: 1vh 2vw;
+    box-shadow: 2px 2px 2px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main #sideSection {
+    background-color: #060816;
+    width: 40vw;
+    height: 90vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* hover effects */
+nav div:nth-child(2) a:hover {
+    cursor: pointer;
+    color: red;
+    border-bottom: 5px solid yellow;
+}
+
+nav div:nth-child(3) button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 28, 0);
+}
+
+main #mainSection button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#skillsInfo div:hover {
+    cursor: pointer;
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+#servicesInfo div:hover {
+    cursor: pointer;
+    border: 2px solid yellow;
+}
+
+#projectsInfo div:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(40, 0, 120);
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #1a202c;
+}
+
+
+
+
+
+
+
+@media(max-width:500px) {
+    nav {
+        height: 10vh;
+        justify-content: space-between;
+    }
+
+    nav div:nth-child(1) img {
+        width: 20vw;
+        margin: 0px 2vw;
+    }
+
+    nav div:nth-child(1) h1 {
+        display: none;
+    }
+
+    nav div:nth-child(2) {
+        display: none;
+    }
+
+    nav div:nth-child(3) button {
+        margin: 0px 2vw;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main #mainSection {
+        width: 100vw;
+        border: none;
+    }
+
+    #mainSection #intro {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #mainSection #intro #intro_data {
+        width: 50vw;
+    }
+
+    #mainSection #intro #intro_data button:nth-child(1) {
+        display: none;
+    }
+
+    #mainSection #intro #intro_data h1 {
+        width: 50vw;
+        font-size: 1.5em;
+    }
+
+    #mainSection #intro #intro_data p {
+        display: none;
+    }
+
+    #mainSection #intro #intro_image img {
+        width: 36vw;
+        height: 40vh;
+    }
+
+    #mainSection #about #aboutData {
+        width: 50vw;
+    }
+
+    #aboutData h1 {
+        font-size: 1.2em;
+    }
+
+    #aboutData p {
+        font-size: 0.7em;
+    }
+
+    #aboutData button {
+        font-size: 1em;
+    }
+
+    #mainSection #about #aboutInfo {
+        width: 45vw;
+    }
+
+    #aboutInfo div h3{
+        font-size: 1em;
+    }
+
+    #aboutInfo div {
+        font-size: 0.7em;
+        width: 20vw;
+        height: 15vh;
+    }
+
+    #skillsInfo {
+        height: 40vh !important;
+        flex-wrap: wrap;
+    }
+
+    #skillsInfo div {
+        width: 20vw;
+        margin: 2vh 1vw;
+    }
+
+    #skillsInfo div h3 {
+        font-size: 0.7em;
+    }
+
+    #mainSection #skills {
+        height: 50vh;
+    }
+
+    #servicesData h2 {
+        font-size: 1em;
+    }
+
+    #servicesInfo div h2 {
+        font-size: 0.8em;
+    }
+
+    #servicesInfo div p {
+        font-size: 0.6em;
+    }
+
+    #servicesInfo div h1 {
+        font-size: 1em;
+        width: 10vw;
+    }
+
+    #servicesInfo div {
+        width: 30vw;
+        height: 34vh;
+    }
+
+    #servicesMore button {
+        font-size: 0.8em;
+    }
+
+    main #services {
+        height: 60vh;
+    }
+
+    main #sideSection {
+        width: 100vw;
+        height: auto;
+    }
+
+    main #sideProjects {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    #projectsInfo div {
+        width: 45vw;
+    }
+
+    #projectsInfo div img {
+        width: 45vw;
+    }
+
+
+    #sideConnect #connectData {
+        font-size: 1em;
+    }
+
+    #sideConnect form{
+        padding: 2vh 4vw;
+    }
+
+    form input{
+        width: 50vw;
+    }
+
+    form textarea{
+        width: 80vw;
+    }
+
+    #findmeData{
+        margin: 10vh 0px;
+        width: 80vw;
+    }
+
+    #findMe{
+        padding: 2vh 4vw;
+    }
+
+    #foot{
+        border-top: 10px solid black;
+    }
+
+    #foot button{
+        font-size: 0.8em;
+    }
+
+}
